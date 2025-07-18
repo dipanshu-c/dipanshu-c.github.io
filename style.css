@@ -31,45 +31,6 @@ html {
   scroll-margin-top: 80px;
 }
 
-.navbar {
-  position: sticky;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 10px;
- }
-
-.navbar ul {
-  padding: 4px;
-  list-style-type: none;
-  border: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.navbar ul li {
-  display: inline-block;
-  padding: 4px;
-  margin: 6px 10px;
-}
-
-.navbar ul li a {
-  color: var(--background-dark);
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.navbar ul li a:hover {
-  color: var(--text-muted);
-}
-
-.navbar ul li a:active {
-  color: white;
-}
-
 /* Main Layout */
 .main-container {
   display: flex;
@@ -348,11 +309,6 @@ section {
     font-size: 1rem;
   }
 
-  .navbar ul li a {
-    font-size: 1rem;
-  }
-}
-
 @media (max-width: 480px) {
   .card {
     padding: 15px;
@@ -372,8 +328,3 @@ section {
   .skill-card p {
     font-size: 0.9rem;
   }
-
-  .navbar ul li {
-    margin: 4px;
-  }
-}
