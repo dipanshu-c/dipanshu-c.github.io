@@ -28,6 +28,7 @@ html {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
   color: var(--text-muted);
   border-radius: 10px;
+  scroll-margin-top: 80px;
 }
 
 .navbar {
@@ -37,8 +38,7 @@ html {
   align-items: center;
   justify-content: center;
   padding-bottom: 10px;
-  background-image: url("https://raw.githubusercontent.com/dipanshu-c/dipanshu-c.github.io/main/nav.jpg");
-}
+ }
 
 .navbar ul {
   padding: 4px;
@@ -122,15 +122,6 @@ html {
   object-fit: cover;
   border-radius: 7%;
   margin: 20px;
-}
-
-/* Header */
-header {
-  text-align: center;
-  padding: 60px 20px;
-  background: var(--background-dark);
-  color: var(--text-light);
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
 }
 
 h1 {
