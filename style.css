@@ -18,9 +18,6 @@ body.dark-theme {
   --background-dark: #2E3B38;
   --text-light: #ffffff;
   --text-muted: #EAECE6;
-
-  background-color: var(--background-pale);
-  color: var(--text-muted);
 }
 
 /* General Styles */
@@ -93,6 +90,7 @@ body.dark-theme .navbar {
   color: var(--text-muted);
   box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.05);
 }
+
 body.dark-theme .project-card,
 body.dark-theme .skill-card{
   background-color: var(--background-pale);
@@ -100,15 +98,12 @@ body.dark-theme .skill-card{
   box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.05);
 }
 
-body.dark-theme .skill-card,
-body.dark-theme .project-card {
-  background: var(--background-soft);
-}
+
 
 body.dark-theme .skill-card:hover,
 body.dark-theme .project-card:hover {
-  background: var(--accent-light);
-  color: var(--background-dark);
+  background: var(--background-soft);
+  color: var(--text-muted);
 }
 
 body.dark-theme h1,
