@@ -56,7 +56,11 @@ body.dark-theme .card,
 body.dark-theme #about,
 body.dark-theme .skills-wrapper,
 body.dark-theme #projects,
-body.dark-theme #contact {
+body.dark-theme #contact,
+body.dark-theme .project-card,
+body.dark-theme .skill-card,
+body.dark-theme .card-container 
+body.dark-theme .navbar {
   background-color: var(--background-soft);
   color: var(--text-muted);
   box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.05);
@@ -88,11 +92,21 @@ body.dark-theme #contact a {
 body.dark-theme #contact a:hover {
   color: var(--accent-light);
 }
+body.dark-theme .navbar ul li  a {
+  color: var(--accent);
+}
+
+body.dark-theme .navbar ul li a:hover {
+  color: var(--accent-light);
+}
+
+body.dark-theme .navbar ul li a:active {
+  color: whitesmoke;
+}
 
 html {
   scroll-behavior: smooth;
 }
-
 
 .card, .skills-wrapper, #projects, #contact {
   background-color: var(--background-soft);
@@ -103,24 +117,37 @@ html {
 .navbar {
     position: sticky;
     display: flex;
-    justify-content: end;
-    align-items: end;
-    padding: 20px;
-    background: none;
-    backdrop-filter: blur(10px);
-    color: var(--text-light);
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
     position: sticky;
-    top: 0;
-    bottom: 0;
-    z-index: 9999;
 }
 
-.nav-links {
-  display: flex;
-  gap: 20px;
-  width: fit-content;
-    height: fit-content;
-}
+.navbar ul{
+        padding: 4px;
+        list-style-type: none;
+        position: sticky;
+        border: none;
+    }
+.navbar ul li{
+        position: relative;
+        display: inline-block;
+        padding: 4px;
+    }
+.navbar ul li a{
+        color: var(--background-dark);
+        text-decoration: none;
+        font-weight: bold;
+    }
+.navbar ul li a:active{
+        color: white;
+    }
+.navbar ul li a:hover{
+        color: var(--text-muted);
+        transition: color 0.3s ease;
+        text-decoration: none;
+    }
+
 
 .main-container {
   display: flex;
@@ -426,23 +453,26 @@ section {
 .sun-icon {
   opacity: 0.3;
 }
+
   </style>
 </head>
 
 <body>
   
   <div class="navbar">
-    
-    <div class="nav-links">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#catalog">Catalogue</a></li>
+            <li><a href="#pg">Photo Gallery</a></li>
+        </ul>
       <label class="switch">
-  <input type="checkbox" id="theme-toggle">
-  <span class="slider">
-    <i class="fas fa-moon moon-icon"></i>
-    <i class="fas fa-sun sun-icon"></i>
-  </span>
-</label>
-
-    </div>
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider">
+          <i class="fas fa-moon moon-icon"></i>
+          <i class="fas fa-sun sun-icon"></i>
+        </span>
+      </label>
     </div>
   <div class="main-container">
   <div class="card-column">
@@ -456,7 +486,6 @@ section {
     </div>
   </div>
     <div class="content-columns">
-
       <section class="skills-wrapper">
         <div class="right-skills">
           <h1>Technical Skills</h1>
