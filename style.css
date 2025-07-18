@@ -85,6 +85,13 @@ html {
   margin: 20px;
 }
 
+.card a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-weight: bold;
+  padding: 8px;
+}
+
 h1 {
   font-family: 'Times New Roman', Times, serif;
   font-size: 2rem;
@@ -97,6 +104,7 @@ p {
   font-size: 1.2rem;
   color: var(--text-muted);
   margin: 0px;
+  padding: 8px;
 }
 
 #skills-wrapper,
