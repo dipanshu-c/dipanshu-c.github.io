@@ -50,7 +50,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom = 10px;
+  padding-bottom: 10px;
 }
 
 .navbar ul {
@@ -87,8 +87,6 @@ html {
 body.dark-theme header,
 body.dark-theme .card,
 body.dark-theme #about,
-body.dark-theme .skills-wrapper,
-body.dark-theme #projects,
 body.dark-theme #contact, 
 body.dark-theme .navbar {
   background-color: var(--background-soft);
