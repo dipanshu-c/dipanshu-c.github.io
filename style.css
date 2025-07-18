@@ -101,7 +101,7 @@ body.dark-theme .skill-card{
 
 body.dark-theme .skill-card:hover,
 body.dark-theme .project-card:hover {
-  background: var(--background-soft);
+  background: var(--background-pale);
   color: var(--text-muted);
 }
 
