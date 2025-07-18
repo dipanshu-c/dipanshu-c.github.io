@@ -88,11 +88,15 @@ body.dark-theme .card,
 body.dark-theme #about,
 body.dark-theme .skills-wrapper,
 body.dark-theme #projects,
-body.dark-theme #contact,
-body.dark-theme .project-card,
-body.dark-theme .skill-card, 
+body.dark-theme #contact, 
 body.dark-theme .navbar {
   background-color: var(--background-soft);
+  color: var(--text-muted);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.05);
+}
+body.dark-theme .project-card,
+body.dark-theme .skill-card{
+  background-color: var(--background-pale);
   color: var(--text-muted);
   box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.05);
 }
