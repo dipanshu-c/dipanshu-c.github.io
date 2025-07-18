@@ -265,6 +265,7 @@ section {
   display: flex;
   gap: 15px;
   align-items: flex-start;
+  justify-content: center;
   background: var(--background-pale);
   padding: 20px;
   border-radius: 10px;
