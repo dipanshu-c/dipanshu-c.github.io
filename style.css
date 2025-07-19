@@ -81,10 +81,11 @@ html {
 
 .card img {
   width: 240px;
-  height: 284px;
+  height: auto;
   object-fit: cover;
   border-radius: 7%;
   margin: 20px;
+  max-width: 100%;
 }
 
 .card a {
@@ -125,7 +126,6 @@ section {
   flex: 1;
   text-align: center;
 }
-
 
 .skills-wrapper {
   backdrop-filter: blur(10px);
@@ -198,7 +198,6 @@ section {
   margin: 20px 0px;
 }
 
-
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -239,7 +238,9 @@ section {
   background: var(--background-dark);
   transform: scale(1.02);
   color: white;
-}/* Contact */
+}
+
+/* Contact */
 #contact {
   text-align: center;
   padding: 20px;
@@ -259,7 +260,6 @@ section {
   transition: color 0.3s ease;
 }
 
-
 /* Animation */
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -270,7 +270,7 @@ section {
   animation: fadeIn 1s ease-in-out;
 }
 
-/* Responsive Design */
+/* ✅ Responsive Design */
 @media (max-width: 1024px) {
   .main-container {
     flex-direction: column;
@@ -291,51 +291,47 @@ section {
 }
 
 @media (max-width: 768px) {
-  .main-container{
-    margin-top: 5px;
-    margin-left: 5px;
-    width: 100%;
+  .main-container {
+    flex-direction: column;
     margin: 0;
     padding: 0;
   }
-  .skills-wrapper, .projects, .card, .contents-column {
-    width: 90%;
+
+  .skills-wrapper,
+  .projects-grid,
+  .skills-grid {
+    grid-template-columns: 1fr !important;
+    width: 100%;
+    padding: 10px;
   }
-  .skills-wrapper, .projects-grid, .skills-grid {
-    flex-direction: column;
-    align-items: center;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    width: 90%;
+
+  .card, .content-columns, .skill-card, .project-card {
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
   }
 
   .skill-card, .project-card {
     flex-direction: column;
     align-items: flex-start;
-    padding: 15px;
-    width: 90%;
   }
 
   .card img {
-    width: 80%;
+    width: 100%;
     height: auto;
-    
+    margin: 0;
   }
 
-
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   p {
     font-size: 1rem;
   }
+}
 
 @media (max-width: 480px) {
-  .card {
-    padding: 15px;
-  }
-
   .right-skills h2,
   .skill-card h4,
   .project-card h4 {
@@ -346,3 +342,4 @@ section {
   .skill-card p {
     font-size: 0.9rem;
   }
+}
