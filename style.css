@@ -280,11 +280,10 @@ section, card {
     padding: 0 10px;
   }
 
-  .card-column {
+   .card-column {
     width: 100%;
     display: flex;
     flex-direction: column;
-    alighn-self: start;
   }
 
   .card,
