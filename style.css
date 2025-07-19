@@ -294,9 +294,9 @@ section {
   .main-container{
     margin-top: 5px;
     margin-left: 5px;
-    max-width: 390px;
+    max-width: 300px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
   }
   .skills-wrapper, .projects-grid, .skills-grid {
