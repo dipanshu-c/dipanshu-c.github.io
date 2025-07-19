@@ -300,7 +300,6 @@ section, card {
     flex-direction: column;
     margin: 0;
     padding: 10px;
-    overflow-x: hiddden;
   }
 
   .skills-wrapper,
@@ -310,9 +309,13 @@ section, card {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 20px;
+    padding: 0;
     margin: 0;
     gap: 20px;
+  }
+
+  .right-skills {
+    padding: 20px;
   }
 
   .card,
@@ -321,10 +324,8 @@ section, card {
   .project-card {
     width: 100%;
     max-width: 100%;
-    padding: 15px;
-    margin: 10px 0;
+    padding: 20px;
     box-sizing: border-box;
-    overflow-x: hidden;
   }
 
   .skill-card,
@@ -334,9 +335,9 @@ section, card {
   }
 
   .card img {
-    width: 80%;
+    width: 90%;
     height: auto;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 10px;
     border-radius: 20px;
   }
