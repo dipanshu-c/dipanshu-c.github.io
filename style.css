@@ -301,12 +301,12 @@ section, card {
   .projects-grid,
   .skills-grid {
     grid-template-columns: 1fr !important;
-    width: 100%;
+    width: 90%;
     padding: 10px;
   }
 
   .card, .content-columns, .skill-card, .project-card {
-    width: 100%;
+    width: 90%;
     padding: 15px;
     margin: 0 auto;
   }
@@ -317,9 +317,10 @@ section, card {
   }
 
   .card img {
-    width: 100%;
+    width: 90%;
     height: auto;
     margin: 0;
+    border-radius: 15px;
   }
 
   h1 {
