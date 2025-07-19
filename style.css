@@ -41,8 +41,6 @@ html {
   gap: 40px;
   height: 100vh;
   overflow: hidden;
-  margin: 0 auto;
-  padding: 0;
 }
 
 .card-column {
@@ -292,9 +290,7 @@ section {
   }
 }
 
-@media (max-width: 768px) {
-  body {
-  }
+@media (max-width: 390px) {
   .main-container{
     margin-top: 5px;
     margin-left: 5px;
@@ -333,10 +329,6 @@ section {
 @media (max-width: 480px) {
   .card {
     padding: 15px;
-  }
-
-  header {
-    padding: 30px 10px;
   }
 
   .right-skills h2,
