@@ -309,7 +309,6 @@ section, card {
     width: 90%;
     padding: 20px;
     margin: 0 auto;
-    
   }
 
   .skill-card, .project-card {
@@ -317,8 +316,8 @@ section, card {
     align-items: flex-start;
   }
   .card img {
-    width: 80%;
-    height: auto;
+    width: 75%;
+    height: 75%;
     margin: 0 auto;
     padding: 20px;
     border-radius: 20px;
