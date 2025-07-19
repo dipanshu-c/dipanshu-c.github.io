@@ -309,6 +309,7 @@ section, card {
     width: 90%;
     padding: 20px;
     margin: 0 auto;
+    
   }
 
   .skill-card, .project-card {
@@ -320,7 +321,7 @@ section, card {
     height: auto;
     margin: 0 auto;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
   }
 
   h1 {
