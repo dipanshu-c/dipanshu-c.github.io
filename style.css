@@ -266,7 +266,7 @@ section {
   to { opacity: 1; }
 }
 
-section {
+section, card {
   animation: fadeIn 1s ease-in-out;
 }
 
