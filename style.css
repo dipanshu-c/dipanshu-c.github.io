@@ -294,11 +294,11 @@ section {
   .main-container{
     margin-top: 5px;
     margin-left: 5px;
-    width: 90%;
+    width: 100%;
     margin: 0;
     padding: 0;
   }
-  .skills-wrapper, .projects, .card {
+  .skills-wrapper, .projects, .card, .contents-column {
     width: 90%;
   }
   .skills-wrapper, .projects-grid, .skills-grid {
