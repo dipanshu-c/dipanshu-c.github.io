@@ -270,12 +270,14 @@ section, card {
   animation: fadeIn 1s ease-in-out;
 }
 
-/* ✅ Responsive Design */
+/* ✅ Responsive Design Fix */
+
 @media (max-width: 1024px) {
   .main-container {
     flex-direction: column;
     height: auto;
     gap: 20px;
+    padding: 0 10px;
   }
 
   .card-column {
@@ -284,9 +286,12 @@ section, card {
     justify-content: center;
   }
 
-  .card, .content-columns {
+  .card,
+  .content-columns {
     width: 100%;
+    max-width: 100%;
     padding: 20px;
+    box-sizing: border-box;
   }
 }
 
@@ -294,35 +299,45 @@ section, card {
   .main-container {
     flex-direction: column;
     margin: 0;
-    padding: 0;
+    padding: 10px;
+    overflow-x: hiddden;
   }
 
   .skills-wrapper,
   .projects-grid,
   .skills-grid {
-    grid-template-columns: 1fr !important;
-    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     padding: 20px;
+    margin: 0;
     gap: 20px;
-    margin: 10px;
   }
 
-  .card, .content-columns, .skill-card, .project-card {
-    width: 90%;
-    padding: 20px;
-    margin: 20px 0;
+  .card,
+  .content-columns,
+  .skill-card,
+  .project-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 
-  .skill-card, .project-card {
+  .skill-card,
+  .project-card {
     flex-direction: column;
     align-items: flex-start;
-    padding-right: 0;
   }
+
   .card img {
-    width:80%;
+    width: 80%;
     height: auto;
-    margin: 10px auto;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 10px;
     border-radius: 20px;
   }
 
@@ -339,7 +354,7 @@ section, card {
   .right-skills h2,
   .skill-card h4,
   .project-card h4 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .project-card p,
