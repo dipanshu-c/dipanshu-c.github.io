@@ -6,7 +6,7 @@
   --background-pale: #EEEFE0;
   --background-dark: #A7C1A8;
   --text-light: #ffffff;
-  --text-muted: #4a4a4a;
+  --text-muted: #4a4a4a;https://github.com/dipanshu-c/dipanshu-c.github.io/projects
 }
 
 /* General Styles */
@@ -283,7 +283,8 @@ section, card {
   .card-column {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    alighn-self: start;
   }
 
   .card,
