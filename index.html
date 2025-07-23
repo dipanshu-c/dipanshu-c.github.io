@@ -18,7 +18,10 @@
   <span></span>
   <span></span>
 </div>
-  <div style="display:none;" id="myDiv" class="animate-bottom">
+
+
+
+<div  id="myDiv" class="animate-bottom">
   <div id = "home" class="main-container" >
   <div class="card-column" id="cards">
     <div class="card-container">
@@ -116,15 +119,14 @@
             #loadanimation
           var myVar;
 
-          function myFunction() {
-            myVar = setTimeout(showPage, 3000);
-          }
-          
-          function showPage() {
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("myDiv").style.display = "block";
-          }
-    
+        function myFunction() {
+          myVar = setTimeout(showPage, 3000);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
     // Scroll reveal effect
             const sections = document.querySelectorAll("section");
             const revealSection = () => {
