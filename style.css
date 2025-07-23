@@ -473,6 +473,12 @@ section, #card {
   }
 }
 
+@media (max-width: 600px){
+  .card{
+    display: grid;
+  }
+}
+
 @media (max-width: 480px) {
   .right-skills h2,
   .skill-card h4,
