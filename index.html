@@ -113,6 +113,17 @@
   </div>
   </div>
   <script>
+            #loadanimation
+          var myVar;
+
+          function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+          }
+          
+          function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+          }
             const cards = document.querySelectorAll("div");
             const revealCards = () => {
                 sections.forEach(sec => {
@@ -149,18 +160,6 @@
                     alert("Please enter a valid email and message.");
                 }
             });
-        #loadanimation
-          var myVar;
-
-          function myFunction() {
-            myVar = setTimeout(showPage, 3000);
-          }
-          
-          function showPage() {
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("myDiv").style.display = "block";
-          }
-            
 
   
         </script>
