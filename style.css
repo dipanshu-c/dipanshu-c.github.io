@@ -346,7 +346,11 @@ section, #card {
 .submit-button:hover {
     transform: scale(1.06);
 }
-
+.contactform{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
 .input{
     text-rendering: auto;
     color: fieldtext;
