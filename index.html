@@ -175,14 +175,6 @@
     alert("Oops! Something went wrong: " + error);
   });
 
-  // Send to WhatsApp
-  const phoneNumber = "918742954847";
-  const whatsappMessage = encodeURIComponent(
-    `Contact Form Submission:\nEmail: ${email}\nMessage: ${message}`
-  );
-  window.open(`https://wa.me/${phoneNumber}?text=${whatsappMessage}`, "_blank");
-});
-
         </script>
         
 </body>
