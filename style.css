@@ -227,6 +227,7 @@ section {
 }
 
 .skill-card h4 {
+  margin: 4px 0 0;
   text-align: left;
   margin: 0;
   font-size: 1.2rem;
@@ -348,6 +349,20 @@ section, #card {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+}
+.forminputs{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 10px;
+  min-width: 240px;
+  margin-top: 20px;
+   backdrop-filter: blur(10px);
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 .input{
    color: var(--text-muted);
