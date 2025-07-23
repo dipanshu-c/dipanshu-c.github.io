@@ -173,12 +173,12 @@ emailjs.send("dipanshu_MailX", "dipanshu_mailTemplate", {
   message: message
 }).then(() => {
   alert("Email sent successfully!");
+  // 🎯 Clear the form
+  document.getElementById("contact-form").reset();
 }, (error) => {
   alert("Oops! Something went wrong: " + error);
 });
 });
-   
-    document.getElementById("contact-form").reset();
  
 </script>
         
