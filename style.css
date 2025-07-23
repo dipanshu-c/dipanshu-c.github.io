@@ -342,6 +342,8 @@ section, #card {
 .contactform{
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+    align-items: stretch;
   margin-bottom: 20px;
 }
 .forminputs{
