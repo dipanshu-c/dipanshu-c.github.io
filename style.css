@@ -299,6 +299,7 @@ section {
   text-align: center;
   padding: 20px;
   backdrop-filter: blur(10px);
+  margin-bottom: 30px;
 }
 
 #contact a {
@@ -396,6 +397,10 @@ section, #card {
     padding: 20px;
     box-sizing: border-box;
   }
+
+  .content-column{
+    overflow-y: hoidden;
+  }
 }
 
 @media (max-width: 768px) {
@@ -407,7 +412,9 @@ section, #card {
   .contactform{
   flex-direction: column;
 }
-
+.card{
+  display: grid;
+}
   .skills-wrapper,
   .projects-grid,
   .skills-grid,
@@ -420,6 +427,9 @@ section, #card {
     margin: 0;
     gap: 20px;
     align-items: stretch;
+  }
+  .content-column{
+    overflow-y: hoidden;
   }
 
   .right-skills {
@@ -466,6 +476,9 @@ section, #card {
     font-size: 1.2rem;
   }
 
+  .content-column{
+    overflow-y: hoidden;
+  }
   .card{
     display: grid;
   }
