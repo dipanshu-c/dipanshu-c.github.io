@@ -9,10 +9,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@2.15.1/devicon.min.css" />
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="https://raw.githubusercontent.com/dipanshu-c/dipanshu-c.github.io/refs/heads/main/pf.ico" type="image/x-icon"/>
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script>
-    emailjs.init("RxkPbjG13G7ib6r5-"); // Replace with your EmailJS user ID
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init({
+        publicKey: "RxkPbjG13G7ib6r5-" // Replace with your actual public key
+      });
+    })();
   </script>
+
 
 </head>
 
