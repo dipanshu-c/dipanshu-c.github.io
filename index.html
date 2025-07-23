@@ -152,7 +152,8 @@
             };
             revealSection();
             window.addEventListener("scroll", revealSection);
-        document.getElementById("contact-form").addEventListener("submit", function(event) {
+        
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
   event.preventDefault(); // Stop normal form submission
 
   // Capture form data
@@ -160,22 +161,26 @@
   const message = document.getElementById("message").value;
 
   // Simple validation
-  if (!email.includes("@") || message.length < 5) {
-    alert("Please enter a valid email and message.");
-    return; // Stop if validation fails
-  }
+  const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+if (!isValidEmail || message.length < 5) {
+  alert("Please enter a valid email and message.");
+  return;
+}
 
   // Send to EmailJS
-  emailjs.send("dipanshu_MailX", "dipanshu_mailTemplate", {
-    from_email: email,
-    message: message
-  }).then(() => {
-    alert("Email sent successfully!");
-  }, (error) => {
-    alert("Oops! Something went wrong: " + error);
-  });
-
-        </script>
+emailjs.send("dipanshu_MailX", "dipanshu_mailTemplate", {
+  from_email: email,
+  message: message
+}).then(() => {
+  alert("Email sent successfully!");
+}, (error) => {
+  alert("Oops! Something went wrong: " + error);
+});
+});
+   
+    document.getElementById("contact-form").reset();
+ 
+</script>
         
 </body>
 </html>
