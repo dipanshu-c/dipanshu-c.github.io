@@ -13,7 +13,7 @@
 
 <body>
   <div id = "home" class="main-container">
-  <div class="card-column">
+  <div class="card-column" id="cards">
     <div class="card-container">
       <div class="card">
         <img src="https://raw.githubusercontent.com/dipanshu-c/dipanshu-c.github.io/main/IMG_3681.JPG" alt="Dipanshu Chaudhary" class="profile-image" />
@@ -107,7 +107,20 @@
 
   <script>
   
-            // Scroll reveal effect
+            const cards = document.querySelectorAll("cards");
+            const revealCards = () => {
+                sections.forEach(sec => {
+                    const rect = sec.getBoundingClientRect();
+                    if (rect.top < window.innerHeight * 0.8) {
+                        sec.style.opacity = "1";
+                        sec.style.transform = "translateY(0)";
+                    }
+                });
+            };
+            revealCards();
+            window.addEventListener("scroll", revealCards);
+    
+    // Scroll reveal effect
             const sections = document.querySelectorAll("section");
             const revealSection = () => {
                 sections.forEach(sec => {
