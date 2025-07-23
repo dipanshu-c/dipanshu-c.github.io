@@ -124,18 +124,6 @@
             document.getElementById("loader").style.display = "none";
             document.getElementById("myDiv").style.display = "block";
           }
-            const cards = document.querySelectorAll("div");
-            const revealCards = () => {
-                sections.forEach(sec => {
-                    const rect = sec.getBoundingClientRect();
-                    if (rect.top < window.innerHeight * 0.8) {
-                        sec.style.opacity = "1";
-                        sec.style.transform = "translateY(0)";
-                    }
-                });
-            };
-            revealCards();
-            window.addEventListener("scroll", revealCards);
     
     // Scroll reveal effect
             const sections = document.querySelectorAll("section");
