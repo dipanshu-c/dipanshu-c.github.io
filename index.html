@@ -121,9 +121,17 @@
           <input class="input" id="name" name="name" placeholder="Your Full Name" required />
           <input class="input" type="email" id="email" name="email" placeholder="Your email" required />
           <textarea  class="input" id="message" name="message" placeholder="Your message" required></textarea>
-          <button class="submit-button type="submit">Send</button>
+          <button class="submit-button" type="submit">Send</button>
         </form>
+        <div id="loader-spinner" style="display: none; text-align: center;">
+          <i class="fas fa-spinner fa-spin" style="font-size: 2rem;"></i>
+          <p>Sending your message...</p>
+        </div>
 
+        <div id="success-animation" style="display: none; text-align: center;">
+          <i class="fas fa-check-circle" style="font-size: 2rem; color: green;"></i>
+          <p>Message sent successfully!</p>
+        </div>
         <h1>Contact</h1>
         <a href="mailto:dipanshuchaudhary85@gmail.com"><i class="fas fa-envelope"></i> Email</a>
         <a href="https://github.com/dipanshu-c"><i class="fab fa-github"></i> GitHub</a>
@@ -160,33 +168,49 @@
             window.addEventListener("scroll", revealSection);
         
   document.getElementById("contact-form").addEventListener("submit", function(event) {
-  event.preventDefault(); // Stop normal form submission
+  event.preventDefault(); // Prevent page reload
 
-  // Capture form data
+  // Show loader
+  document.getElementById("loader-spinner").style.display = "block";
+  document.getElementById("success-animation").style.display = "none";
+
+  // Get form values
+  const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value;
 
-  // Simple validation
+  // Basic validation
   const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-if (!isValidEmail || message.length < 5 || name.length < 3) {
-  alert("Please enter a valid email and message.");
-  return;
-}
+  if (!isValidEmail || name.length < 3 || message.length < 5) {
+    alert("Please enter a valid name, email, and message.");
+    document.getElementById("loader-spinner").style.display = "none";
+    return;
+  }
 
-  // Send to EmailJS
-emailjs.send("dipanshu_MailX", "dipanshu_mailTemplate", {
-  from_email: email,
-  message: message,
-  name : name
-}).then(() => {
-  alert("Email sent successfully!");
-  // 🎯 Clear the form
-  document.getElementById("contact-form").reset();
-}, (error) => {
-  alert("Oops! Something went wrong: " + error);
+  // Send Email via EmailJS
+  emailjs.send("dipanshu_MailX", "dipanshu_mailTemplate", {
+    name: name,
+    from_email: email,
+    message: message
+  }).then(() => {
+    // Hide loader and show success
+    document.getElementById("loader-spinner").style.display = "none";
+    document.getElementById("success-animation").style.display = "block";
+
+    // Reset form
+    document.getElementById("contact-form").reset();
+
+    // Hide success after 5 seconds
+    setTimeout(() => {
+      document.getElementById("success-animation").style.display = "none";
+    }, 5000);
+  }, (error) => {
+    document.getElementById("loader-spinner").style.display = "none";
+    alert("Oops! Something went wrong: " + error);
+  });
 });
-});
- 
+
+
 </script>
         
 </body>
