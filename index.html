@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@2.15.1/devicon.min.css" />
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="https://raw.githubusercontent.com/dipanshu-c/dipanshu-c.github.io/refs/heads/main/pf.ico" type="image/x-icon"/>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    emailjs.init("RxkPbjG13G7ib6r5-"); // Replace with your EmailJS user ID
+  </script>
+
 </head>
 
 <body onload="myFunction()" style="margin:0;">
@@ -107,6 +112,12 @@
       </section>
 
       <section id="contact">
+        <form id="contact-form">
+          <input type="email" id="email" name="email" placeholder="Your email" required />
+          <textarea id="message" name="message" placeholder="Your message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+
         <h1>Contact</h1>
         <a href="mailto:dipanshuchaudhary85@gmail.com"><i class="fas fa-envelope"></i> Email</a>
         <a href="https://github.com/dipanshu-c"><i class="fab fa-github"></i> GitHub</a>
@@ -116,7 +127,8 @@
   </div>
   </div>
   <script>
-            #loadanimation
+          // loadanimation
+
           var myVar;
 
         function myFunction() {
@@ -140,18 +152,37 @@
             };
             revealSection();
             window.addEventListener("scroll", revealSection);
-        
-            // Contact form validation
-            document.getElementById("contact-form").addEventListener("submit", function(event) {
-                const email = document.getElementById("email").value;
-                const message = document.getElementById("message").value;
-                if (!email.includes("@") || message.length < 5) {
-                    event.preventDefault();
-                    alert("Please enter a valid email and message.");
-                }
-            });
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Stop normal form submission
 
-  
+  // Capture form data
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  // Simple validation
+  if (!email.includes("@") || message.length < 5) {
+    alert("Please enter a valid email and message.");
+    return; // Stop if validation fails
+  }
+
+  // Send to EmailJS
+  emailjs.send("dipanshu_MailX", "dipanshu_mailTemplate", {
+    from_email: email,
+    message: message
+  }).then(() => {
+    alert("Email sent successfully!");
+  }, (error) => {
+    alert("Oops! Something went wrong: " + error);
+  });
+
+  // Send to WhatsApp
+  const phoneNumber = "918742954847";
+  const whatsappMessage = encodeURIComponent(
+    `Contact Form Submission:\nEmail: ${email}\nMessage: ${message}`
+  );
+  window.open(`https://wa.me/${phoneNumber}?text=${whatsappMessage}`, "_blank");
+});
+
         </script>
         
 </body>
