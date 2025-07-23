@@ -322,16 +322,16 @@ section {
 }
 
 section, #card {
-  animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 2s ease-in-out;
 }
 
 button {
     color: var(--text-muted);
-    background: #819A91;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 20px;
     padding: 15px;
+    border: 1px solid #819A91;
     box-shadow: 0 6px 12px rgba(0,0,0,0.06);
     width: 100px;
     height: 10px;
@@ -340,14 +340,14 @@ button {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 }
 
 -button:hover {
     transform: scale(1.06);
 }
 
-#input, #message{
+input, textarea{
     text-rendering: auto;
     color: fieldtext;
     letter-spacing: normal;
