@@ -388,15 +388,12 @@ section, #card {
     flex-direction: column;
   }
   .card{
-    display : inline-flex;
-        .card {
         display: inline-flex;
         flex-wrap: nowrap;
         align-content: center;
         justify-content: center;
         align-items: center;
     }
-  }
   .card,
   .content-columns {
     width: 100%;
