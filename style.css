@@ -39,6 +39,7 @@ html {
   justify-content: center;
   align-items: center;
   gap: 5px;
+  margin-top: 35%
 }
 
 .dots span {
@@ -84,6 +85,9 @@ html {
   from{ bottom:-100px; opacity:0 } 
   to{ bottom:0; opacity:1 }
 }
+#myDiv {
+  display: none;
+  }
 
 .main-container {
   display: flex;
