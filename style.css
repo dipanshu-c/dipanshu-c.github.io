@@ -298,7 +298,6 @@ section {
 #contact {
   text-align: center;
   padding: 20px;
-  margin-bottom: 160px;
   backdrop-filter: blur(10px);
 }
 
@@ -331,11 +330,10 @@ section, #card {
     border-radius: 20px;
     padding: 15px;
     border: 1px solid #819A91;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.06);
-    width: 100px;
-    height: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
     cursor: pointer;
     transition: transform 0.4s ease-in-out;
+    background: beige;
 }
 
 .submit-button:hover {
@@ -346,6 +344,7 @@ section, #card {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 .forminputs{
    backdrop-filter: blur(10px);
@@ -409,7 +408,7 @@ section, #card {
   .skills-wrapper,
   .projects-grid,
   .skills-grid,
-  .forminputs {
+  .forminputs{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -417,6 +416,7 @@ section, #card {
     padding: 0;
     margin: 0;
     gap: 20px;
+    align-items: stretch;
   }
 
   .right-skills {
