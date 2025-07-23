@@ -11,8 +11,15 @@
   <link rel="icon" href="https://raw.githubusercontent.com/dipanshu-c/dipanshu-c.github.io/refs/heads/main/pf.ico" type="image/x-icon"/>
 </head>
 
-<body>
-  <div id = "home" class="main-container">
+<body onload="myFunction()" style="margin:0;">
+
+<div class="dots" id="loader">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+  <div id = "home" class="main-container" >
   <div class="card-column" id="cards">
     <div class="card-container">
       <div class="card">
@@ -104,9 +111,8 @@
       </section>
     </div>
   </div>
-
+  </div>
   <script>
-  
             const cards = document.querySelectorAll("div");
             const revealCards = () => {
                 sections.forEach(sec => {
@@ -143,7 +149,17 @@
                     alert("Please enter a valid email and message.");
                 }
             });
-        
+        #loadanimation
+          var myVar;
+
+          function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+          }
+          
+          function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+          }
             
 
   
