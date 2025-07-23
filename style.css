@@ -384,7 +384,9 @@ section, #card {
     display: flex;
     flex-direction: column;
   }
-
+  .card{
+    display : inline-flex;
+  }
   .card,
   .content-columns {
     width: 100%;
@@ -460,6 +462,10 @@ section, #card {
   .skill-card h4,
   .project-card h4 {
     font-size: 1.2rem;
+  }
+
+  .card{
+    display: grid;
   }
 
   .project-card p,
