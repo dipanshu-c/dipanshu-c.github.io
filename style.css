@@ -468,3 +468,20 @@ section, #card {
     font-size: 0.9rem;
   }
 }
+#loader-spinner {
+  display: none;
+  text-align: center;
+  margin-top: 1rem;
+  animation: fadeIn 0.4s ease-in;
+}
+
+#loader-spinner i {
+  font-size: 2rem;
+  color: #007BFF; /* Bootstrap blue, adjust as needed */
+}
+
+#loader-spinner p {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 0.5rem;
+}
