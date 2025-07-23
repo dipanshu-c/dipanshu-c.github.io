@@ -368,6 +368,9 @@ section, #card {
     gap: 20px;
     padding: 0 10px;
   }
+  .contactform{
+  flex-direction: column;
+}
 
    .card-column {
     width: 100%;
@@ -390,6 +393,9 @@ section, #card {
     margin: 0;
     padding: 10px;
   }
+  .contactform{
+  flex-direction: column;
+}
 
   .skills-wrapper,
   .projects-grid,
