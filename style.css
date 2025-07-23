@@ -162,7 +162,7 @@ p {
   font-size: 1.2rem;
   color: var(--text-muted);
   margin: 0px;
-  padding: 8px;
+  padding: 8px 0px 8px 0px;
 }
 
 #skills-wrapper,
@@ -235,7 +235,6 @@ section {
 }
 
 .skill-card p {
-  margin: 4px 0 0;
   font-size: 0.9rem;
   color: #666;
   text-align: left;
@@ -286,7 +285,6 @@ section {
 
 .project-card p {
   font-size: 0.95rem;
-  margin: 5px 0 0;
   color: #666;
 }
 
