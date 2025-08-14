@@ -117,12 +117,13 @@ h1, h2{
   gap: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 20px var(--shadow-light);
+  min-height: 65vh;
 }
 
 .about-photo img {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   flex-shrink: 0;
   box-shadow: 0 4px 15px var(--shadow-medium);
@@ -148,7 +149,7 @@ h1, h2{
 section{
   padding: 4rem 2rem;
   backdrop-filter: blur(50px);
-  margin: 2rem auto;
+  margin: 2.5rem auto;
   border-radius: 12px;
   box-shadow: 0 4px 20px var(--shadow-light);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -180,8 +181,7 @@ section:hover, #about:hover {
   flex-wrap: wrap;
   gap: 1.5rem;
   flex-direction: column;
-  gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   align-content: center;
   justify-content: center;
 }
@@ -280,11 +280,12 @@ footer a {
   #about {
     flex-direction: column;
     text-align: center;
+    height: fit-content;
   }
 
   .about-photo img {
-    width: 120px;
-    height: 120px;
+    width: 220px;
+    height: 220px;
   }
 
   .exp-pro {
@@ -301,6 +302,14 @@ footer a {
 /* Tablet: 2 column grid */
 @media (min-width: 601px) and (max-width: 1024px) {
   
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .exp-pro {
+    justify-content: center;
+    line-height: 0.5;
+  }
   section {
     padding: 3rem 1.5rem;
     max-width: 80%;
@@ -333,6 +342,7 @@ footer a {
     flex-direction: column;
     text-align: center;
     gap: 1rem;
+    height: fit-content;
   }
 
   .about-photo img {
