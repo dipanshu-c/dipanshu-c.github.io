@@ -240,7 +240,8 @@ footer a {
   }
   .card {
     min-width: 21rem;
-    min-height: fit-content;
+    max-width: 21rem;
+    max-height: 6rem;
     margin: 0 auto;
     padding: auto;
   }
@@ -251,6 +252,7 @@ footer a {
 
   #projects .card {
     min-width: 21rem;
+    max-width: 21rem;
     min-height: fit-content;
     margin: 0 auto;
     padding: auto;
@@ -278,6 +280,7 @@ footer a {
   }
   .card {
     min-width: auto;
+    max-width: 21rem;
     min-height: fit-content;
     margin: 0 auto;
     padding: auto;
@@ -292,33 +295,33 @@ footer a {
 
   #projects .card {
     justify-content: center;
-    min-width: 80%;
+    min-width: 90%;
     min-height: fit-content;
+    max-height: fit-content;
   }
-  footer a, i, p{
-     font-size: 0.9rem;
-    font-weight: light;
 }
 
 /* Extra Small Devices: 333px to 380px wide */
 @media (max-width: 400px) {
   .card {
-    min-width: 80%; 
-    max-width: 80%;
+    min-width: 90%; 
+    max-width: 90%;
     min-height: fit-content;
     margin: 0 auto;
     padding: 1rem;
   }
 
   #projects .card {
-    min-width: 80%;
-    max-width: 80%;
-    height: fit-content;
+    min-height: fit-content;
+    min-width: 90%;
+    max-width: 90%;
   }
 
   #about {
     flex-direction: column;
     text-align: center;
+    padding: 1.5rem;
+    gap: 1rem;
   }
 
   .about-photo img {
@@ -328,7 +331,7 @@ footer a {
 
   section {
     padding: 1.5rem 1rem;
-    max-width: 80%;
+    max-width: 95%;
   }
 
   .navbar {
@@ -339,8 +342,7 @@ footer a {
   .navbar a {
     margin: 0.25rem 0;
   }
-  footer a, i, p{
-     font-size: 0.8rem;
-    font-weight: light;
+  footer a, i, p {
+  font-size: 0.8rem;
 }
 }
