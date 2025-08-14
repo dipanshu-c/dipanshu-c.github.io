@@ -50,6 +50,7 @@ h1, h2, h3 {
   color: var(--text-dark);
   transition: color 0.3s ease;
   text-decoration: none;
+  border-radius:14px;
 }
 .navbar a img {
     width: 24px;
