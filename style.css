@@ -87,8 +87,6 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   gap: 2rem;
-  margin: 2rem auto;
-  padding: 2rem;
   background: var(--bg-section);
   border-radius: 12px;
   box-shadow: 0 4px 20px var(--shadow-light);
@@ -133,7 +131,6 @@ section:hover {
   color: var(--text-dark);
   font-weight: bold;
   padding: 8px;
-  font-size: 1.2rem;
   transition: color 0.3s ease;
 }
 
@@ -239,8 +236,9 @@ footer a {
     grid-template-columns: 1fr;
   }
   .card {
-    min-width: 21rem;
-    max-width: 21rem;
+    min-width: 80%;
+    max-width: 80%;
+    min-height: fit-content;
     max-height: 6rem;
     margin: 0 auto;
     padding: auto;
@@ -251,8 +249,8 @@ footer a {
   }
 
   #projects .card {
-    min-width: 21rem;
-    max-width: 21rem;
+    min-width: 80%;
+    max-width: 80%;
     min-height: fit-content;
     margin: 0 auto;
     padding: auto;
@@ -261,6 +259,7 @@ footer a {
   section {
     padding: 2rem 1.5rem;
     max-width: 80%;
+    text-align: center;
   }
   #about {
     flex-direction: column;
@@ -271,6 +270,11 @@ footer a {
     width: 120px;
     height: 120px;
   }
+
+  footer a, i, p {
+  font-size: 0.9rem;
+}
+
 }
 
 /* Tablet: 2 column grid */
@@ -279,11 +283,8 @@ footer a {
     grid-template-columns: repeat(2, 1fr);
   }
   .card {
-    min-width: auto;
-    max-width: 21rem;
+    min-width: 80%;
     min-height: fit-content;
-    margin: 0 auto;
-    padding: auto;
   }
   section {
     padding: 3rem 1.5rem;
@@ -297,15 +298,16 @@ footer a {
     justify-content: center;
     min-width: 90%;
     min-height: fit-content;
-    max-height: fit-content;
   }
+  footer a, i, p {
+  font-size: 1rem;
+}
 }
 
 /* Extra Small Devices: 333px to 380px wide */
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .card {
-    min-width: 90%; 
-    max-width: 90%;
+    min-width: 80%; 
     min-height: fit-content;
     margin: 0 auto;
     padding: 1rem;
@@ -313,14 +315,12 @@ footer a {
 
   #projects .card {
     min-height: fit-content;
-    min-width: 90%;
-    max-width: 90%;
+    min-width: 80%;
   }
 
   #about {
     flex-direction: column;
     text-align: center;
-    padding: 1.5rem;
     gap: 1rem;
   }
 
@@ -331,7 +331,8 @@ footer a {
 
   section {
     padding: 1.5rem 1rem;
-    max-width: 95%;
+    max-width: 85%;
+    text-align: center;
   }
 
   .navbar {
