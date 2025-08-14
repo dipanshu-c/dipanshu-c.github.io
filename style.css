@@ -263,7 +263,6 @@ section {
 
 .project-card {
   display: flex;
-  flex-direction: column;
   gap: 35px;
   background: var(--background-pale);
   padding: 20px;
