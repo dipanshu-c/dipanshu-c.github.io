@@ -18,7 +18,7 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: var(--bg-light);
+  background-image: linear-gradient(135deg, #c7d0df 0%, #f5f7fa 100%);;
   color: var(--text-dark);
   margin: 0;
   padding: 0;
@@ -37,17 +37,25 @@ h1, h2, h3, h4 {
   position: sticky;
   top: 0;
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping on small screens */
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 2px 10px var(--shadow-light);
   z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 30px;
+  padding: 0.5rem 2rem;
   backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px var(--shadow-light);
 }
 
 .navbar a {
-  padding: 8px;
-  margin: 0.5rem 1rem;
   font-weight: 500;
   position: relative;
   color: var(--text-dark);
@@ -87,7 +95,6 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   gap: 2rem;
-  background: var(--bg-section);
   border-radius: 12px;
   box-shadow: 0 4px 20px var(--shadow-light);
 }
@@ -106,9 +113,9 @@ h1, h2, h3, h4 {
 }
 
 /* Section Styling */
-section {
+section{
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+  backdrop-filter: blur(50px);
   margin: 2rem auto;
   border-radius: 12px;
   box-shadow: 0 4px 20px var(--shadow-light);
@@ -116,11 +123,7 @@ section {
   max-width: 1200px;
 }
 
-section:nth-child(even) {
-  background: linear-gradient(135deg, #fdfdfd 0%, #f5fafa 100%);
-}
-
-section:hover {
+section:hover, #about:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 25px var(--shadow-medium);
 }
@@ -165,7 +168,7 @@ section:hover {
 }
 
 .card {
-    background: var(--bg-section);
+  backdrop-filter: blur(10px);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 20px var(--shadow-light);
@@ -191,7 +194,7 @@ section:hover {
 
 /* Buttons */
 .btn {
-  background: var(--primary-light);
+ backdrop-filter: blur(10px);
   color: var(--text-muted);
   padding: 0.5rem 1rem;
   border-radius: 8px;
@@ -209,7 +212,7 @@ section:hover {
 
 /* Footer */
 footer {
-  background: var(--bg-section);
+  backdrop-filter: blur(10px);
   text-align: center;
   padding: 0.2rem;
   color: var(--text-muted);
