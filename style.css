@@ -295,6 +295,9 @@ footer a {
     min-width: 80%;
     min-height: fit-content;
   }
+  footer a, i, p{
+     font-size: 0.9rem;
+    font-weight: light;
 }
 
 /* Extra Small Devices: 333px to 380px wide */
@@ -339,6 +342,7 @@ footer a {
     margin: 0.25rem 0;
   }
   footer a, i, p{
-  font-size: 0.8rem;
+     font-size: 0.8rem;
+    font-weight: light;
 }
 }
