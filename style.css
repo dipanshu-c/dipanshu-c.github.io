@@ -295,7 +295,7 @@ footer a {
 
   #projects .card {
     justify-content: center;
-    min-width: 90%;
+    min-width: 80%;
     max-height: fit-content;
   }
 }
@@ -303,16 +303,16 @@ footer a {
 /* Extra Small Devices: 333px to 380px wide */
 @media (max-width: 400px) {
   .card {
-    min-width: 90%; 
-    max-width: 90%;
+    min-width: 80%; 
+    max-width: 80%;
     max-height: none;
     margin: 0 auto;
     padding: 1rem;
   }
 
   #projects .card {
-    min-width: 90%;
-    max-width: 90%;
+    min-width: 80%;
+    max-width: 80%;
   }
 
   #about {
@@ -329,7 +329,7 @@ footer a {
 
   section {
     padding: 1.5rem 1rem;
-    max-width: 95%;
+    max-width: 80%;
   }
 
   .navbar {
