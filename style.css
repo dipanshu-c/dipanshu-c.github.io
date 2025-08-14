@@ -116,19 +116,9 @@ html {
 .navbar a:hover {
     background: var(--background-dark);
     transform: scale(1.02);
-    color: white;
+    color: white; 
 }
 
-@media(max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-    }
-    a {
-        text-align: center;
-        padding: 10px;
-    }
-    
-}
 .main-container {
   display: flex;
   align-items: flex-start;
