@@ -112,6 +112,7 @@ html {
   margin: 20px auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  margin-bottom: 30px;
 }
 
 .content-columns::-webkit-scrollbar {
