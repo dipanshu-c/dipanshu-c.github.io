@@ -240,8 +240,7 @@ footer a {
   }
   .card {
     min-width: 21rem;
-    max-width: 21rem;
-    max-height: 6rem;
+    min-height: fit-content;
     margin: 0 auto;
     padding: auto;
   }
@@ -252,8 +251,7 @@ footer a {
 
   #projects .card {
     min-width: 21rem;
-    max-width: 21rem;
-    max-height: 6rem;
+    min-height: fit-content;
     margin: 0 auto;
     padding: auto;
   }
@@ -280,8 +278,7 @@ footer a {
   }
   .card {
     min-width: auto;
-    max-width: 21rem;
-    max-height: 6rem;
+    min-height: fit-content;
     margin: 0 auto;
     padding: auto;
   }
@@ -296,7 +293,7 @@ footer a {
   #projects .card {
     justify-content: center;
     min-width: 80%;
-    max-height: fit-content;
+    min-height: fit-content;
   }
 }
 
@@ -305,7 +302,7 @@ footer a {
   .card {
     min-width: 80%; 
     max-width: 80%;
-    max-height: none;
+    min-height: fit-content;
     margin: 0 auto;
     padding: 1rem;
   }
@@ -313,6 +310,7 @@ footer a {
   #projects .card {
     min-width: 80%;
     max-width: 80%;
+    min-height: fit-content;
   }
 
   #about {
