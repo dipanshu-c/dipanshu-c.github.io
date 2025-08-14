@@ -12,6 +12,14 @@
   --shadow-medium: rgba(0, 0, 0, 0.15);
 }
 
+
+.montserrat-text {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -25,7 +33,18 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3, h4 {
+h1, h2{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 90%;
+  margin: 0%;
+  padding: 0%;
+}
+
+ h3, h4 {
   font-family: 'Poppins', sans-serif;
   padding: 0%;
   margin: 0 ;
@@ -35,7 +54,7 @@ h1, h2, h3, h4 {
 .navbar {
   padding: 1rem 2rem;
   position: sticky;
-  bottom: 0;
+  top: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -94,9 +113,11 @@ h1, h2, h3, h4 {
 #about {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 20px var(--shadow-light);
+  line-height: 1;
 }
 
 .about-photo img {
@@ -112,6 +133,18 @@ h1, h2, h3, h4 {
   flex: 1;
 }
 
+.exp-pro {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  gap: 0.5rem;
+}
+
+.about-content i{
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
 /* Section Styling */
 section{
   padding: 4rem 2rem;
@@ -120,7 +153,7 @@ section{
   border-radius: 12px;
   box-shadow: 0 4px 20px var(--shadow-light);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 section:hover, #about:hover {
@@ -144,39 +177,39 @@ section:hover, #about:hover {
 
 /* Card Grid Responsive */
 .card-grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  flex-direction: column;
   gap: 2rem;
   margin-top: 2rem;
-  align-content: start;
+  align-content: center;
   justify-content: center;
-  align-items: start;
-  justify-items: start;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-#projects .card-grid {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-#projects .card {
-  min-height: 20rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  min-width: 34rem;
 }
 
 .card {
-  backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 20px var(--shadow-light);
     padding: 1.5rem;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-height: 10rem;
-    min-width: 21rem;
+    height: fit-content;
+    min-width: 95%;
+}
+.card-header {
+  flex: 1;
+  text-align: left;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1;
 }
 
 .card:hover {
@@ -194,9 +227,8 @@ section:hover, #about:hover {
 
 /* Buttons */
 .btn {
- backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: var(--text-muted);
-  padding: 0.5rem 1rem;
   border-radius: 8px;
   text-decoration: none;
   display: inline-block;
@@ -231,36 +263,18 @@ footer a {
 
 /* Mobile: 1 column grid */
 @media (max-width: 600px) {
+  h1, h2 {
+    font-weight: 800;
+    font-size: 2rem;
+  }
   .about{
     text-align: center;
   }
-
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-  .card {
-    min-width: 80%;
+  .card{
     max-width: 80%;
-    min-height: fit-content;
-    max-height: 6rem;
-    margin: 0 auto;
-    padding: auto;
   }
-
-  #projects .card-grid {
-    grid-template-columns: 1fr;
-  }
-
-  #projects .card {
-    min-width: 80%;
-    max-width: 80%;
-    min-height: fit-content;
-    margin: 0 auto;
-    padding: auto;
-  }
-
   section {
-    padding: 2rem 1.5rem;
+    padding: 2rem;
     max-width: 80%;
     text-align: center;
   }
@@ -274,7 +288,12 @@ footer a {
     height: 120px;
   }
 
-  footer a, i, p {
+  .exp-pro {
+    justify-content: center;
+    line-height: 0.5;
+  }
+
+  a, i, p {
   font-size: 0.9rem;
 }
 
@@ -282,43 +301,33 @@ footer a {
 
 /* Tablet: 2 column grid */
 @media (min-width: 601px) and (max-width: 1024px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .card {
-    min-width: 80%;
-    min-height: fit-content;
-  }
+  
   section {
     padding: 3rem 1.5rem;
     max-width: 80%;
   }
-    #projects .card-grid {
-    grid-template-columns: repeat(1, 1fr);
+  .card{
+    min-width: 80%;
   }
-
-  #projects .card {
-    justify-content: center;
-    min-width: 90%;
-    min-height: fit-content;
-  }
-  footer a, i, p {
+  a, i, p {
   font-size: 1rem;
 }
 }
 
 /* Extra Small Devices: 333px to 380px wide */
 @media (max-width: 480px) {
+  .nav-links{
+    gap: 0.5rem;
+  }
   .card {
-    min-width: 80%; 
-    min-height: fit-content;
-    margin: 0 auto;
-    padding: 1rem;
+    flex-direction: column;
+    min-width: 80%;
   }
 
-  #projects .card {
-    min-height: fit-content;
-    min-width: 80%;
+  .card-header{
+    text-align: center;
+    margin-left: 0;
+    margin-top: 0.5rem;
   }
 
   #about {
@@ -334,7 +343,7 @@ footer a {
 
   section {
     padding: 1.5rem 1rem;
-    max-width: 85%;
+    max-width: 80%;
     text-align: center;
   }
 
@@ -343,10 +352,16 @@ footer a {
     padding: 0.5rem;
   }
 
+  .exp-pro {
+    flex-direction: row;
+    justify-content: center;
+    line-height: 0.5;
+  }
+
   .navbar a {
     margin: 0.25rem 0;
   }
-  footer a, i, p {
+  a, i, p, a {
   font-size: 0.8rem;
 }
 }
