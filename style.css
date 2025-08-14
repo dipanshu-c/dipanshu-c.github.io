@@ -135,7 +135,7 @@ html {
   justify-content: space-between;
   gap: 40px;
   height: 100vh;
-  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 .card-column {
@@ -147,17 +147,9 @@ html {
 .content-columns {
   flex: 1;
   height: 100vh;
-  overflow-y: auto;
   padding: 30px;
-  scroll-behavior: smooth;
   margin: 20px auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
   margin-bottom: 30px;
-}
-
-.content-columns::-webkit-scrollbar {
-  display: none;
 }
 
 /* Card Styles */
