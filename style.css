@@ -101,6 +101,7 @@ html {
 .card-column {
   flex-shrink: 0;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .content-columns {
@@ -262,6 +263,7 @@ section {
 
 .project-card {
   display: flex;
+  flex-direction: column;
   gap: 35px;
   background: var(--background-pale);
   padding: 20px;
@@ -289,6 +291,12 @@ section {
   color: #666;
 }
 
+.project-card a {
+  font-size: 0.95rem;
+  color: #666;
+  text-decoration: none;
+}
+
 .project-card:hover {
   background: var(--background-dark);
   transform: scale(1.02);
@@ -314,6 +322,8 @@ section {
   color: var(--accent-light);
   transition: color 0.3s ease;
 }
+
+
 
 /* Animation */
 @keyframes fadeIn {
