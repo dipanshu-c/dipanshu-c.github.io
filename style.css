@@ -231,6 +231,10 @@ footer a {
 
 /* Mobile: 1 column grid */
 @media (max-width: 600px) {
+  .about-content{
+    text-align: center;
+  }
+
   .card-grid {
     grid-template-columns: 1fr;
   }
