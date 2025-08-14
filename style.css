@@ -288,7 +288,7 @@ section {
 .project-card p {
   font-size: 0.95rem;
   color: #666;
-  padding-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .project-card a {
@@ -299,7 +299,6 @@ section {
   border: 1px solid #666;
   padding: 5px;
   border-radius: 14px;
-  margin:3px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
