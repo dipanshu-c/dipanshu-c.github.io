@@ -4,253 +4,91 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dipanshu Chaudhary | Portfolio</title>
-  <!-- FontAwesome & DevIcons -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css?v=2" />
+
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@2.15.1/devicon.min.css" />
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="https://raw.githubusercontent.com/dipanshu-c/dipanshu-c.github.io/refs/heads/main/pf.ico" type="image/x-icon"/>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function() {
-      emailjs.init({
-        publicKey: "RxkPbjG13G7ib6r5-" // Replace with your actual public key
-      });
-    })();
-  </script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CF7H448ESY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@2.15.1/devicon.min.css">
 
-  gtag('config', 'G-CF7H448ESY');
-</script>
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+<body>
 
-<body onload="myFunction()" style="margin:0;">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Dipanshu</div>
+    <div class="nav-links">
+      <a href="#about"><img src="https://img.icons8.com/color/48/000000/home.png" alt="Home">Home</a>
+      <a href="#skills"><img src="https://img.icons8.com/color/48/000000/services.png" alt="Skills">Skills</a>
+      <a href="#projects"><img src="https://img.icons8.com/color/48/000000/project.png" alt="Projects">Projects</a>
+      <a href="#contact"><img src="https://img.icons8.com/color/48/000000/phone.png" alt="Contact">Contact</a>
+    </div>
+  </nav>
 
-<div class="dots" id="loader">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
-<div  id="myDiv" class="animate-bottom">
-  <div class="navbar">
-        <a href=""> <img src="https://img.icons8.com/color/48/000000/home.png" alt="Home"></a>
-        <a href=""><img src="https://img.icons8.com/color/48/000000/services.png" alt="Services"></a>
-        <a href=""><img src="https://img.icons8.com/color/48/000000/phone.png" alt="Contact"></a>
-        <a href=""><img src="https://img.icons8.com/color/48/000000/about.png" alt="About"></a>
-  </div>
-  <div id = "home" class="main-container" >
-  <div class="card-column" id="cards">
-    <div class="card-container">
+  <!-- About -->
+  <section id="about" data-aos="fade-up">
+    <h1>Hi, I’m Dipanshu 👋</h1>
+    <p>Frontend developer passionate about building beautiful, functional, and modern web experiences.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <div class="card-grid">
       <div class="card">
-        <img src="https://raw.githubusercontent.com/dipanshu-c/dipanshu-c.github.io/main/IMG_3681.JPG" alt="Dipanshu Chaudhary" class="profile-image" />
-        <div class = "about">
-          <h1>Dipanshu Chaudhary</h1>
-          <p style="text-align: center; ">Data Science | Business | Python | Photographer</p>
-          <a href="mailto:dipanshuchaudhary85@gmail.com"><i class="fas fa-envelope"></i></a>
-          <a href="https://github.com/dipanshu-c"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/dipxnshu"><i class="fab fa-linkedin"></i></a>
-        </div>
+        <i class="fab fa-html5 fa-3x" style="color:#E44D26;"></i>
+        <h3>HTML5</h3>
+      </div>
+      <div class="card">
+        <i class="fab fa-css3-alt fa-3x" style="color:#2965F1;"></i>
+        <h3>CSS3</h3>
+      </div>
+      <div class="card">
+        <i class="fab fa-js fa-3x" style="color:#F7DF1E;"></i>
+        <h3>JavaScript</h3>
       </div>
     </div>
-  </div>
-    <div class="content-columns">
-      <section class="skills-wrapper">
-        <div class="right-skills">
-          <h1>Technical Skills</h1>
-          <div class="skills-grid">
-            <div class="skill-card">
-              <img src="https://img.icons8.com/color/48/000000/power-bi.png" alt="Power BI" />
-              <div>
-                <h4>Power BI</h4>
-                <p>Visualize real-time business data & reporting</p>
-              </div>
-            </div>
-            <div class="skill-card">
-              <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python" />
-              <div>
-                <h4>Python</h4>
-                <p>A programming language for data and automation</p>
-              </div>
-            </div>
-            <div class="skill-card">
-              <img src="https://img.icons8.com/fluency/48/mysql-logo.png" alt="MySQL" />
-              <div>
-                <h4>MySQL</h4>
-                <p>Relational database query language</p>
-              </div>
-            </div>
-            <div class="skill-card">
-              <img src="https://img.icons8.com/color/48/html-5.png" alt="HTML5" />
-              <div>
-                <h4>HTML5</h4>
-                <p>Markup language for web structure</p>
-              </div>
-            </div>
-            <div class="skill-card">
-              <img src="https://img.icons8.com/color/48/css3.png" alt="CSS3" />
-              <div>
-                <h4>CSS3</h4>
-                <p>Styling and layout for web design</p>
-              </div>
-            </div>
-            <div class="skill-card">
-              <img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="MongoDB" />
-              <div>
-                <h4>MongoDB</h4>
-                <p>NoSQL open source document-oriented database</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  </section>
 
-      <section id="projects">
-        <h1 class="section-title">Projects</h1>
-        <div class="projects-grid">
-          <div class="project-card">
-            <img src="https://img.icons8.com/color/48/000000/portfolio.png" alt="ZESTY" />
-            <div>
-              <h4>Portfolio</h4>
-              <p>My personal portfolio with simple and authentic design. Tech stack used: HTML, CSS & little bit of JavaScript.</p>
-               <a href="https://github.com/dipanshu-c/dipanshu-c.github.io" >Visit GitHub Repository</a>
-            </div>
-          </div>
-           
-          <div class="project-card">
-            <img src="https://img.icons8.com/mountain.png" alt="ZESTY" />
-            <div>
-              <h4>TravelMate</h4>
-              <p>A prototype that allows users to find their accompany with thier own choice and filters. Tech stack used: HTML, CSS & little bit of JavaScript.</p>
-              <a href="https://github.com/dipanshu-c/travelmate" >Visit GitHub Repository</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="https://img.icons8.com/color/48/000000/food.png" alt="ZESTY" />
-            <div>
-              <h4>ZESTY - Food Delivery WebApp</h4>
-              <p>Mini Project: An instant food delivery webapp prototype.</p>
-              <a href="">Visit GitHub Repository</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="https://img.icons8.com/ios-filled/50/airplane-take-off.png" alt="Aircraft Tracker" />
-            <div>
-              <h4>Aircraft Tracker & Inventory Management</h4>
-              <p>Tracks aircraft location, manages communication, inventory, and reporting.</p>
-              <a href="https://github.com/dipanshu-c/aerodefensetracker">Visit GitHub Repository</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact">
-         <h1>Contact</h1>
-        <form class="contactform" id="contact-form">
-          <div class="forminputs">
-          <input class="input" id="name" name="name" placeholder="Your Full Name" required />
-          <input class="input" type="email" id="email" name="email" placeholder="Your email" required />
-          <textarea  class="input" id="message" name="message" placeholder="Your message" required></textarea>
-          <button class="submit-button" type="submit">Send</button>
-          </div>
-        </form>
-        <div id="loader-spinner" style="display: none; text-align: center;">
-          <i class="fas fa-spinner fa-spin" style="font-size: 2rem;"></i>
-          <p>Sending your message...</p>
-        </div>
-
-        <div id="success-animation" style="display: none; text-align: center;">
-          <i class="fas fa-check-circle" style="font-size: 2rem; color: green;"></i>
-          <p>Message sent successfully!</p>
-        </div>
-        <a href="mailto:dipanshuchaudhary85@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-        <a href="https://github.com/dipanshu-c"><i class="fab fa-github"></i> GitHub</a>
-        <a href="https://www.linkedin.com/in/dipxnshu"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      </section>
+  <!-- Projects -->
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="data/project1.jpg" alt="Project 1">
+        <h3>TravelMate</h3>
+        <p>A travel planning app with filters, location-based suggestions, and clean UI.</p>
+      </div>
+      <div class="card">
+        <img src="data/project2.jpg" alt="Project 2">
+        <h3>Portfolio Website</h3>
+        <p>This portfolio you’re viewing right now! Built with HTML, CSS, and JS.</p>
+      </div>
     </div>
-  </div>
-  </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <p>Let’s collaborate! Reach out via email or connect on social media.</p>
+    <a href="mailto:dipanshu@example.com" class="btn">Email Me</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Dipanshu Chaudhary. Built with ❤️.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-          // loadanimation
-
-          var myVar;
-
-        function myFunction() {
-          myVar = setTimeout(showPage, 1500);
-        }
-        
-        function showPage() {
-          document.getElementById("loader").style.display = "none";
-          document.getElementById("myDiv").style.display = "block";
-        }
-    // Scroll reveal effect
-            const sections = document.querySelectorAll("section");
-            const revealSection = () => {
-                sections.forEach(sec => {
-                    const rect = sec.getBoundingClientRect();
-                    if (rect.top < window.innerHeight * 0.8) {
-                        sec.style.opacity = "1";
-                        sec.style.transform = "translateY(0)";
-                    }
-                });
-            };
-            revealSection();
-            window.addEventListener("scroll", revealSection);
-        
-  document.getElementById("contact-form").addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevent page reload
-
-  // Show loader
-  document.getElementById("loader-spinner").style.display = "block";
-  document.getElementById("success-animation").style.display = "none";
-
-  // Get form values
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
-
-  // Basic validation
-  const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  if (!isValidEmail || name.length < 3 || message.length < 5) {
-    alert("Please enter a valid name, email, and message.");
-    document.getElementById("loader-spinner").style.display = "none";
-    return;
-  }
-
-  // Send Email via EmailJS
-  emailjs.send("dipanshu_MailX", "dipanshu_mailTemplate", {
-    name: name,
-    from_email: email,
-    message: message
-  }).then(() => {
-    // Hide loader and show success
-    document.getElementById("loader-spinner").style.display = "none";
-    document.getElementById("success-animation").style.display = "block";
-
-    // Reset form
-    document.getElementById("contact-form").reset();
-
-    // Hide success after 5 seconds
-    setTimeout(() => {
-      document.getElementById("success-animation").style.display = "none";
-    }, 5000);
-  }, (error) => {
-    document.getElementById("loader-spinner").style.display = "none";
-    alert("Oops! Something went wrong: " + error);
-  });
-});
-
-
-</script>
-        
+    AOS.init({ duration: 800, once: true });
+  </script>
 </body>
 </html>
-
-
-
-
-
-
