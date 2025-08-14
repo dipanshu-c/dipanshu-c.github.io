@@ -310,7 +310,7 @@ footer a {
   #projects .card {
     min-width: 80%;
     max-width: 80%;
-    min-height: fit-content;
+    height: fit-content;
   }
 
   #about {
@@ -338,7 +338,7 @@ footer a {
   .navbar a {
     margin: 0.25rem 0;
   }
-  footer a, i {
+  footer a, i, p{
   font-size: 0.8rem;
 }
 }
