@@ -89,6 +89,26 @@ html {
   display: none;
   }
 
+.navbar a {
+    color: var(--text-muted);
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    margin: 10px;
+}
+.navbar a img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.navbar a:hover {
+    background: var(--background-dark);
+    transform: scale(1.02);
+    color: white;
+}
+
 .main-container {
   display: flex;
   align-items: flex-start;
