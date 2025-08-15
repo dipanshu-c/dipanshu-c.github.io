@@ -145,6 +145,10 @@ h1, h2{
   padding: 1rem;
 }
 
+.about-content i{
+  font-size: 1.5rem;
+}
+
 /* Section Styling */
 section{
   padding: 4rem 2rem;
