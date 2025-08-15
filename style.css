@@ -236,19 +236,32 @@ section:hover, #about:hover {
 
 /* Buttons */
 .btn {
-  backdrop-filter: blur(10px);
   color: var(--text-muted);
-  border-radius: 8px;
+  padding: 0.5rem;
   text-decoration: none;
   display: inline-block;
   transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background: var(--secondary-light);
   color: var(--text-dark);
   transform: translateY(-3px);
   box-shadow: 0 6px 20px var(--shadow-medium);
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  left: 0;
+  bottom: -4px;
+  transition: width 0.3s ease;
+}
+
+.btn:hover::after {
+  width: 100%;
 }
 
 /* Footer */
