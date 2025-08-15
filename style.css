@@ -140,9 +140,9 @@ h1, h2{
   gap: 0.5rem;
 }
 
-.about-content i{
-  font-size: 1.5rem;
-  margin-right: 0.5rem;
+.about-content a{
+  font-size: 2rem;
+  padding: 1rem;
 }
 
 /* Section Styling */
@@ -266,20 +266,15 @@ footer a {
     font-weight: 800;
     font-size: 2rem;
   }
-  .about{
-    text-align: center;
-  }
   .card{
     max-width: 80%;
   }
   section {
     padding: 2rem;
     max-width: 80%;
-    text-align: center;
   }
   #about {
     flex-direction: column;
-    text-align: center;
     height: fit-content;
   }
 
